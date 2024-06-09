@@ -1,0 +1,176 @@
+/*G E N E R A L  O P T I O N S*/
+body {
+	background-color: hsl(30, 38%, 92%);
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body p {
+	font-size: 14px;
+}
+
+h1 {
+	font-family: "Fraunces", serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+}
+
+/*M A I N */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 95%;
+    margin: 8% 0;
+    border-radius: 15px;
+}
+
+/*F I G U R E*/
+figure {
+    width: 100%;
+    margin: 0% 0 0 0;
+}
+
+figure img.chanel {
+    width: -webkit-fill-available;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+figure img.chaneldekstop {
+	display: none;
+}
+
+/*S E C T I O N*/
+section.info {
+    padding: 2% 8%;
+}
+
+.perfume {
+    font-weight: 300;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+	font-size: small;
+	margin-bottom: -5%;
+	opacity: 55%;
+}
+
+p.description {
+	opacity: 55%;
+	font-size: small;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.price h1 {
+    color: hsl(158, 36%, 37%);
+    font-size: x-large;
+    margin: -3% 8% 0 0;
+}
+
+.price p {
+    text-decoration: line-through;
+	opacity: 55%;
+}
+
+button.btn {
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 8px;
+    width: -webkit-fill-available;
+    padding: 5%;
+    color: #fff;
+    font-weight: 600;
+	margin-bottom: 8%;
+	cursor: pointer;
+}
+/*F O O T E R*/
+
+.attribution {
+    text-align: center;
+    font-size: small;
+    color: grey;
+}
+
+.attribution a {
+	color: grey;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.attribution:hover {
+	color: hsl(158, 32%, 29%);
+}
+
+.attribution:visited {
+	color: hsl(158, 36%, 37%);
+}
+
+@media only screen and (min-width: 768px) {
+	main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+		width: 80%;
+    }
+
+	figure img.chanel {
+		display: none;
+	}
+
+	figure img.chaneldekstop {
+        display: block;
+        width: inherit;
+		border-radius: 15px 0 0 15px;
+    }
+
+	section.info {
+		padding: 0% 5%;
+        width:80%;
+	}
+
+	h3.perfume {
+		margin-top: 10%;
+	}
+
+	.info h1 {
+		font-size: xx-large;
+	}
+
+	p.description {
+		font-size: medium;
+		margin-top: -5%;
+	}
+
+	.price {
+		margin-bottom: 5%;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	main {
+		width: 60%;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	main {
+		width: 40%;
+	}
+}
+
+@media only screen and (min-width: 2560px) {
+	main {
+		width: 22%;
+	}
+}
